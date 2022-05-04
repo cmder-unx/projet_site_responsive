@@ -39,7 +39,7 @@ body {
 */
 #histoire{
     background-color: aquamarine;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #histoire p{
@@ -47,11 +47,25 @@ body {
     padding: 0 0 16px 0;
 }
 
+#histoire-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #histoire-intro h2{
     margin: 0;
     padding: 20px 0 20px 0;
 }
 
+#histoire-intro-partie-texte{
+    width: 50vw;
+}
+
+#histoire-intro img{
+    align-self: center;
+    width: 20%;
+}
 
 /*
     SECTION ECOLOGIE
