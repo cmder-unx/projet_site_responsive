@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*
+    HEADER
+*/
+#header{
+    background-color: burlywood;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#header-partie-image{
+    background-color: green;
+    border: solid 1px black;
+}
+
+#header-partie-texte{
+    background-color: yellowgreen;
+    border: solid 1px red;
+}
+
+
+#header h1{
+    margin: 0;
+    padding: 22px 0 22px 0;
+}
+
+#header p{
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+/*
+    SECTION HISTOIRE
+*/
+#histoire{
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+#histoire p{
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+#histoire-intro h2{
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+
+
+/*
+    SECTION ECOLOGIE
+*/
+#ecologie{
+    background-color: bisque;
+    height: 100vh;
+}
+
+#ecologie p{
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+#ecologie-au-bout-du-rouleau h2{
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
