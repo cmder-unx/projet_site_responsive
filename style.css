@@ -3,6 +3,11 @@ body {
     font-family: sans-serif;
 }
 
+h1{
+    margin: 0;
+    padding: 22px 0 22px 0;
+}
+
 h2{
     margin: 0;
     padding: 20px 0 20px 0;
@@ -14,77 +19,91 @@ p{
     text-align: justify;
 }
 
+@media only screen and (min-width: 1000px) {
+    /*
+        HEADER
+    */
+    #header{
+        background-color: burlywood;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
 
-/*
-    HEADER
-*/
-#header{
-    background-color: burlywood;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 40% 60%;
+    #header-partie-image{
+        background-color: green;
+    }
+
+    #header-partie-texte{
+        background-color: yellowgreen;
+    }
+
+    .partie-texte{
+        width: 50vw;
+    }
+
+    /*
+        SECTION HISTOIRE
+    */
+    #histoire img{
+        width: 20%;
+        align-self: center;
+    }
+
+
+    .epoque{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #histoire-intro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #histoire-a-nos-jours-partie-image{
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #histoire-a-nos-jours-partie-image img{
+        width: 100%;
+    }
+
+    /*
+        SECTION ECOLOGIE
+    */
+    #ecologie-au-bout-du-rouleau{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #ecologie-au-bout-du-rouleau img{
+        width: 20%;
+        align-self: center;
+    }
+
+    #alternatives-possibles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #alternatives-possibles img{
+        width: 20%;
+        align-self: center;
+    }
 }
 
-#header-partie-image{
-    background-color: green;
-    border: solid 1px black;
-}
+@media only screen and (max-width: 1000px) {
 
-#header-partie-texte{
-    background-color: yellowgreen;
-    border: solid 1px red;
-}
+    body{
+        background-color: green;
+    }
 
-#header h1{
-    margin: 0;
-    padding: 22px 0 22px 0;
-}
-
-
-/*
-    SECTION HISTOIRE
-*/
-#histoire{
-    background-color: aquamarine;
-    /* height: 100vh; */
-}
-
-#histoire img{
-    width: 20%;
-    align-self: center;
-}
-
-.partie-texte{
-    width: 50vw;
-}
-
-.epoque{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#histoire-intro{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#histoire-a-nos-jours-partie-image{
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#histoire-a-nos-jours-partie-image img{
-    width: 100%;
-}
-
-/*
-    SECTION ECOLOGIE
-*/
-#ecologie{
-    background-color: bisque;
-    height: 100vh;
 }
