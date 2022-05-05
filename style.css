@@ -3,6 +3,18 @@ body {
     font-family: sans-serif;
 }
 
+h2{
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+
+p{
+    margin: 0;
+    padding: 0 0 16px 0;
+    text-align: justify;
+}
+
+
 /*
     HEADER
 */
@@ -23,16 +35,11 @@ body {
     border: solid 1px red;
 }
 
-
 #header h1{
     margin: 0;
     padding: 22px 0 22px 0;
 }
 
-#header p{
-    margin: 0;
-    padding: 0 0 16px 0;
-}
 
 /*
     SECTION HISTOIRE
@@ -42,9 +49,19 @@ body {
     /* height: 100vh; */
 }
 
-#histoire p{
-    margin: 0;
-    padding: 0 0 16px 0;
+#histoire img{
+    width: 20%;
+    align-self: center;
+}
+
+.partie-texte{
+    width: 50vw;
+}
+
+.epoque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #histoire-intro{
@@ -53,18 +70,15 @@ body {
     justify-content: space-around;
 }
 
-#histoire-intro h2{
-    margin: 0;
-    padding: 20px 0 20px 0;
+#histoire-a-nos-jours-partie-image{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-#histoire-intro-partie-texte{
-    width: 50vw;
-}
-
-#histoire-intro img{
-    align-self: center;
-    width: 20%;
+#histoire-a-nos-jours-partie-image img{
+    width: 100%;
 }
 
 /*
@@ -73,14 +87,4 @@ body {
 #ecologie{
     background-color: bisque;
     height: 100vh;
-}
-
-#ecologie p{
-    margin: 0;
-    padding: 0 0 16px 0;
-}
-
-#ecologie-au-bout-du-rouleau h2{
-    margin: 0;
-    padding: 20px 0 20px 0;
 }
