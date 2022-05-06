@@ -20,6 +20,17 @@ p{
 }
 
 @media only screen and (min-width: 1000px) {
+
+    .partie-texte{
+        width: 50vw;
+    }
+
+    .epoque{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     /*
         HEADER
     */
@@ -30,6 +41,17 @@ p{
         grid-template-columns: 40% 60%;
     }
 
+    #header-partie-texte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #header-intro{
+        width: 75%;
+    }
+
     #header-partie-image{
         background-color: green;
     }
@@ -38,23 +60,12 @@ p{
         background-color: yellowgreen;
     }
 
-    .partie-texte{
-        width: 50vw;
-    }
-
     /*
         SECTION HISTOIRE
     */
     #histoire img{
         width: 20%;
         align-self: center;
-    }
-
-
-    .epoque{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
     }
 
     #histoire-intro{
@@ -102,8 +113,47 @@ p{
 
 @media only screen and (max-width: 1000px) {
 
-    body{
-        background-color: green;
+    .partie-texte{
+        width: 85vw;
     }
 
+    .image{
+        width: 50vw;
+    }
+
+    .epoque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .epoque img{
+        align-self: center;
+    }
+
+    /*
+        HISTOIRE
+    */
+    #histoire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #histoire-intro-partie-texte img{
+        margin-left: 25%;
+    }
+
+    #histoire-a-nos-jours-partie-texte img{
+        margin-left: 25%;
+    }
+
+    /*
+        ECOLOGIE
+    */
+    #ecologie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
