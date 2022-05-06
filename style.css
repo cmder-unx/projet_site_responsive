@@ -131,6 +131,10 @@ p{
         align-self: center;
     }
 
+    #histoire-intro-partie-texte img, #histoire-a-nos-jours-partie-texte img, #ecologie img{
+        margin-left: 25%;
+    }
+    
     /*
         HISTOIRE
     */
@@ -140,13 +144,6 @@ p{
         align-items: center;
     }
 
-    #histoire-intro-partie-texte img{
-        margin-left: 25%;
-    }
-
-    #histoire-a-nos-jours-partie-texte img{
-        margin-left: 25%;
-    }
 
     /*
         ECOLOGIE
