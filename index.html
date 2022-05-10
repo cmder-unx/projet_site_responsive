@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'histoire du papier toilette !</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <main>
         <div id="page-wrapper" class="page-wrapper">
             <header id="header">
-                <div id="header-partie-image" class="image"></div>
+                <div id="header-partie-image" class="image">
+                </div>
                 <div id="header-partie-texte">
                     <h1>L'Histoire du papier toilette</h1>
                     <p id="header-intro">
                         Objet ancré dans notre quotidien, la seule pensée de ne plus en avoir a déjà 
                         entraîné des ruptures de stock dans de nombreuses grandes surface, qui suis-je ? 
                         Eh bien oui, le papier toilette ! Revenons ici sur son histoire vieille de plusieurs 
-                        siècles même si réellement démocratisée seulement depuis le XIXe en Occident .
+                        siècles même si réellement démocratisée seulement depuis le XIXe en Occident.
                     </p>
                 </div>
             </header>
@@ -48,12 +50,10 @@
                             où étaient utilisés de préférence de larges feuilles ou des copeaux de bois.
                         </p>
                         <div id="btn-epoques-navigations">
-                            <button id="btn-histoire-antiquite">Dans l'Antiquité</button>
-                            <button id="btn-histoire-moyen-age">Au Moyen-Âge</button>
-                            <button id="btn-histoire-a-nos-jours">Du XIX-XXe siècle à nos jours</button>
+                            <button id="btn-histoire-antiquite">Dans l'Antiquité</button><button id="btn-histoire-moyen-age">Au Moyen-Âge</button><button id="btn-histoire-a-nos-jours">Du XIX-XXe siècle à nos jours</button>
                         </div>
                     </div>
-                    <img src="https://www.mariellebrie.com/wp-content/uploads/2019/05/hosokawashi-washi-papier-japonais.jpg" id="histoire-intro-image" class="image" alt="Washi">
+                    <img src="images/washi-papier-japonais.jpg" id="histoire-intro-image" class="image" alt="Washi">
                 </div>
                 <div id="histoire-epoques">
                     <div id="histoire-antiquite" class="epoque">
@@ -71,7 +71,7 @@
                                 une amphore d’eau salée pour le rincer.  A l’extérieur des pierres étaient aussi utilisées.
                             </p>
                         </div>
-                        <img src="https://live.staticflickr.com/4784/26893988688_94aec6f393_b.jpg" id="histoire-antiquite-image" class="image" alt="Pessoi">
+                        <img src="images/pessoi.jpg" id="histoire-antiquite-image" class="image" alt="Pessoi">
                     </div>
                     <div id="histoire-moyen-age" class="epoque">
                         <div id="histoire-moyen-age-partie-texte" class="partie-texte">
@@ -85,7 +85,7 @@
                                 ou avec de l’étoupe de lin et de chanvre.
                             </p>
                         </div>
-                        <img src="https://cdn.discordapp.com/attachments/949179397880041493/969105549687947334/2847d476adb6013b2f15d45869e61910.jpg" id="histoire-moyen-age-image" class="image" alt="">
+                        <img src="images/toilette-pompei.jpg" id="histoire-moyen-age-image" class="image" alt="Toilette de Pompéi">
                     </div>
                     <div id="histoire-a-nos-jours" class="epoque">
                         <div id="histoire-a-nos-jours-partie-texte" class="partie-texte">
@@ -133,8 +133,8 @@
                             </p>
                         </div>
                         <div id="histoire-a-nos-jours-partie-image">
-                            <img src="https://cdn.discordapp.com/attachments/949179397880041493/969105549251723314/S._WHEELER.jpeg" id="histoire-a-nos-jours-image1" class="image" alt="Seth Wheeler brevet">
-                            <img src="https://cdn.discordapp.com/attachments/949179397880041493/969105550312886312/papier_bulle_corde_lisse.jpg" id="histoire-a-nos-jours-image2" class="image" alt="bulle-corde lisse">
+                            <img src="images/brevet-wheeler.jpeg" id="histoire-a-nos-jours-image1" class="image" alt="Seth Wheeler brevet">
+                            <img src="images/papier_bulle_corde_lisse.jpg" id="histoire-a-nos-jours-image2" class="image" alt="Papier bulle-corde lisse">
                         </div>        
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                             rajoute encore des gaz à effet de serre dans le bilan carbone, ½ sont transformés en fertilisant.
                         </p>
                     </div>
-                    <img src="https://media.discordapp.net/attachments/949179397880041493/969104714471981106/stastistique_pq.jpeg" id="ecologie-au-bout-du-rouleau-image" class="image" alt="Statistiques">
+                    <img src="images/stastistique-pq.jpeg" id="ecologie-au-bout-du-rouleau-image" class="image" alt="Statistiques">
                 </div>
                 <div id="alternatives-possibles">
                     <div id="alternatives-possibles-partie-texte" class="partie-texte">
@@ -193,76 +193,11 @@
                             Inventé sur la même pensée que les lingettes ou les essuis-tout lavables.
                         </p>
                     </div>
-                    <img src="https://img.freepik.com/vecteurs-libre/concept-environnemental-dans-style-papier-terre_23-2148411497.jpg?t=st=1651740174~exp=1651740774~hmac=3b71224971b55c977bc0e030fc90bfe43ee147e88ed238dc41c235b0d916e8a0&w=1380" id="alternatives-possibles-image" class="image" alt="image ecologie">
+                    <img src="images/ecologie-planete.png" id="alternatives-possibles-image" class="image" alt="image ecologie">
                 </div>
             </section>
         </div>
     </main>
 </body>
-<script>
-    // Récupération des bouttons des époques
-    let btn_histoire_antiquite = document.getElementById('btn-histoire-antiquite');
-    let btn_histoire_moyen_age = document.getElementById('btn-histoire-moyen-age');
-    let btn_histoire_a_nos_jours = document.getElementById('btn-histoire-a-nos-jours');
-
-    // Récupération des sections des époques
-    let section_histoire_antiquite = document.getElementById('histoire-antiquite');
-    let section_histoire_moyen_age = document.getElementById('histoire-moyen-age');
-    let section_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours');
-
-    // Affichage par défaut
-    section_histoire_antiquite.style.display = 'flex';
-    section_histoire_moyen_age.style.display = 'none';
-    section_histoire_a_nos_jours.style.display = 'none';
-
-    // Quand on clique sur un boutton, on affiche la section correspondante
-    btn_histoire_antiquite.addEventListener('click', function() {
-        section_histoire_antiquite.style.display = 'flex';
-        section_histoire_moyen_age.style.display = 'none';
-        section_histoire_a_nos_jours.style.display = 'none';
-    });
-    btn_histoire_moyen_age.addEventListener('click', function() {
-        section_histoire_antiquite.style.display = 'none';
-        section_histoire_moyen_age.style.display = 'flex';
-        section_histoire_a_nos_jours.style.display = 'none';
-    });
-    btn_histoire_a_nos_jours.addEventListener('click', function() {
-        section_histoire_antiquite.style.display = 'none';
-        section_histoire_moyen_age.style.display = 'none';
-        section_histoire_a_nos_jours.style.display = 'flex';
-    });
-
-    window.onresize = function() { 
-        var screen_width = window.innerWidth; 
-        let page_wrapper = document.getElementById('page-wrapper');
-
-        // Selectionne chaque image par l'id
-        let image_histoire_intro = document.getElementById('histoire-intro-image');
-        let image_histoire_antiquite = document.getElementById('histoire-antiquite-image');
-        let image_histoire_moyen_age = document.getElementById('histoire-moyen-age-image');
-        let image1_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours-image1');
-        let image2_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours-image2');
-        let image_ecologie_au_bout_du_rouleau = document.getElementById('ecologie-au-bout-du-rouleau-image');
-        let image_alternatives_possibles = document.getElementById('alternatives-possibles-image');
-
-        // Si la largeur de l'écran est inférieure à 1000px, on déplace les images
-        if(screen_width < 1000){
-            
-            // On déplace l'image de l'intro dans la div avec l'id "histoire-intro-partie-texte" avant les bouttons
-            document.getElementById('histoire-intro-partie-texte').insertBefore(image_histoire_intro, document.getElementById('btn-epoques-navigations'));
-            document.getElementById('histoire-a-nos-jours-partie-texte').insertBefore(image1_histoire_a_nos_jours, document.getElementById('p3-histoire-a-nos-jours'));
-            document.getElementById('histoire-a-nos-jours-partie-texte').insertBefore(image2_histoire_a_nos_jours, document.getElementById('p4-histoire-a-nos-jours'));
-            document.getElementById('ecologie-au-bout-du-rouleau-partie-texte').insertBefore(image_ecologie_au_bout_du_rouleau, document.getElementById('p3-ecologie-au-bout-du-rouleau'));
-
-        }else{
-            
-            document.getElementById('histoire-intro').insertBefore(image_histoire_intro, null);
-            document.getElementById('histoire-a-nos-jours-partie-image').insertBefore(image1_histoire_a_nos_jours, null);
-            document.getElementById('histoire-a-nos-jours-partie-image').insertBefore(image2_histoire_a_nos_jours, null);
-            document.getElementById('ecologie-au-bout-du-rouleau').insertBefore(image_ecologie_au_bout_du_rouleau, null);
-        }
-
-    };
-
-</script>
+<script src="js/main.js"></script>
 </html>

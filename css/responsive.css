@@ -1,0 +1,97 @@
+@media only screen and (max-width: 1000px) {
+
+    .partie-texte{
+        width: 85vw;
+    }
+
+    .image{
+        width: 50vw;
+    }
+
+    .epoque{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .epoque img{
+        align-self: center;
+    }
+
+    #histoire-intro-partie-texte img, #histoire-a-nos-jours-partie-texte img, #ecologie img{
+        margin-left: 25%;
+    }
+
+    /* 
+        HEADER
+    */
+    #header{
+        background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("../images/header-background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+    #header-partie-texte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+    }
+
+    #header-intro{
+        width: 75%;
+        font-size: large;
+    }
+    
+    /*
+        HISTOIRE
+    */
+    #histoire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* BOUTONS DE NAVIGATION */
+    
+    button{
+        background-color: unset;
+        border: none;
+        border-bottom: 2px solid black;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        margin: 0;
+        flex-flow: row wrap;
+    }
+
+    button:hover{
+        border: none;
+        border-bottom: 4px solid plum;
+    }
+
+    .active-button{
+        border-bottom: 4px solid plum;
+    }
+
+    #btn-histoire-antiquite,#btn-histoire-moyen-age,#btn-histoire-a-nos-jours{
+        flex: 1 1 auto;
+    }
+
+    /*
+        ECOLOGIE
+    */
+    #ecologie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
