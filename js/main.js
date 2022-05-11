@@ -26,11 +26,11 @@ let ecologie_section = document.getElementById('ecologie');
 let page_wrapper = document.getElementById('page-wrapper');
 
 // Selectionne chaque image par l'id
-let image_histoire_intro = document.getElementById('histoire-intro-image');
+let container_image_histoire_intro = document.getElementById('histoire-intro-image-container');
 let image_histoire_antiquite = document.getElementById('histoire-antiquite-image');
 let image_histoire_moyen_age = document.getElementById('histoire-moyen-age-image');
-let image1_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours-image1');
-let image2_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours-image2');
+let container_image1_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours-partie-image-container1');
+let container_image2_histoire_a_nos_jours = document.getElementById('histoire-a-nos-jours-partie-image-container2');
 let image_ecologie_au_bout_du_rouleau = document.getElementById('ecologie-au-bout-du-rouleau-image');
 let image_alternatives_possibles = document.getElementById('alternatives-possibles-image');
 
@@ -75,17 +75,18 @@ window.onresize = function() {
     // Si la largeur de l'écran est inférieure à 1000px, on déplace les images
     if(screen_width < 1000){
         
-        // On déplace l'image de l'intro dans la div avec l'id "histoire-intro-partie-texte" avant les bouttons
-        document.getElementById('histoire-intro-partie-texte').insertBefore(image_histoire_intro, document.getElementById('btn-epoques-navigations'));
-        document.getElementById('histoire-a-nos-jours-partie-texte').insertBefore(image1_histoire_a_nos_jours, document.getElementById('p3-histoire-a-nos-jours'));
-        document.getElementById('histoire-a-nos-jours-partie-texte').insertBefore(image2_histoire_a_nos_jours, document.getElementById('p4-histoire-a-nos-jours'));
+        // On déplace les images
+        document.getElementById('histoire-intro-partie-texte').insertBefore(container_image_histoire_intro, document.getElementById('btn-epoques-navigations'));
+        document.getElementById('histoire-a-nos-jours-partie-texte').insertBefore(container_image1_histoire_a_nos_jours, document.getElementById('p3-histoire-a-nos-jours'));
+        document.getElementById('histoire-a-nos-jours-partie-texte').insertBefore(container_image2_histoire_a_nos_jours, document.getElementById('p4-histoire-a-nos-jours'));
         document.getElementById('ecologie-au-bout-du-rouleau-partie-texte').insertBefore(image_ecologie_au_bout_du_rouleau, document.getElementById('p3-ecologie-au-bout-du-rouleau'));
 
     }else{
         
-        document.getElementById('histoire-intro').insertBefore(image_histoire_intro, null);
-        document.getElementById('histoire-a-nos-jours-partie-image').insertBefore(image1_histoire_a_nos_jours, null);
-        document.getElementById('histoire-a-nos-jours-partie-image').insertBefore(image2_histoire_a_nos_jours, null);
+        // On déplace les images de nouveau pour les écrans plus grands
+        document.getElementById('histoire-intro').insertBefore(container_image_histoire_intro, null);
+        document.getElementById('histoire-a-nos-jours-partie-image').insertBefore(container_image1_histoire_a_nos_jours, null);
+        document.getElementById('histoire-a-nos-jours-partie-image').insertBefore(container_image2_histoire_a_nos_jours, null);
         document.getElementById('ecologie-au-bout-du-rouleau').insertBefore(image_ecologie_au_bout_du_rouleau, null);
     }
 };
@@ -107,15 +108,20 @@ btn_nav_section_suivante.addEventListener('click', function() {
     if(header_section.classList.contains('reveal-header')){
         header_section.classList.remove('reveal-header');
         header_section.classList.add('hide-section');
+
         histoire_section.classList.remove('hide-section');
         histoire_section.classList.add('reveal-section');
+
         btn_nav_section_precedente.classList.remove('hide-section');
         btn_nav_section_precedente.classList.add('reveal-button');
+
     }else if(histoire_section.classList.contains('reveal-section')){
         histoire_section.classList.remove('reveal-section');
         histoire_section.classList.add('hide-section');
+
         ecologie_section.classList.remove('hide-section');
         ecologie_section.classList.add('reveal-section');
+
         btn_nav_section_suivante.classList.remove('reveal-button');
         btn_nav_section_suivante.classList.add('hide-section');
     }
@@ -125,15 +131,20 @@ btn_nav_section_precedente.addEventListener('click', function() {
     if(histoire_section.classList.contains('reveal-section')){
         histoire_section.classList.remove('reveal-section');
         histoire_section.classList.add('hide-section');
-        btn_nav_section_precedente.classList.remove('reveal-button');
-        btn_nav_section_precedente.classList.add('hide-section');
+
         header_section.classList.remove('hide-section');
         header_section.classList.add('reveal-header');
+
+        btn_nav_section_precedente.classList.remove('reveal-button');
+        btn_nav_section_precedente.classList.add('hide-section');
+
     }else if(ecologie_section.classList.contains('reveal-section')){
         ecologie_section.classList.remove('reveal-section');
         ecologie_section.classList.add('hide-section');
+
         histoire_section.classList.remove('hide-section');
         histoire_section.classList.add('reveal-section');
+
         btn_nav_section_suivante.classList.remove('hide-section');
         btn_nav_section_suivante.classList.add('reveal-button');
     }

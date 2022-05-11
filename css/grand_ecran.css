@@ -10,6 +10,11 @@
         justify-content: space-around;
     }
 
+    .image-container{
+        width: 20vw;
+        align-self: center;
+    }
+
     /*
         HEADER
     */
@@ -42,8 +47,7 @@
         SECTION HISTOIRE
     */
     #histoire img{
-        width: 20%;
-        align-self: center;
+        width: 100%;
     }
 
     #histoire-intro{
@@ -53,18 +57,12 @@
     }
 
     #histoire-a-nos-jours-partie-image{
-        width: 20vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    #histoire-a-nos-jours-partie-image img{
-        width: 100%;
-    }
-
     /* BOUTONS DE NAVIGATION */
-    
     .btn-nav-epoques{
         background-color: unset;
         border: none;
