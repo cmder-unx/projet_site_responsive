@@ -60,7 +60,7 @@
 
     /* BOUTONS DE NAVIGATION */
     
-    button{
+    .btn-nav-epoques{
         background-color: unset;
         border: none;
         border-bottom: 2px solid black;
@@ -73,7 +73,7 @@
         flex-flow: row wrap;
     }
 
-    button:hover{
+    .btn-nav-epoques:hover{
         border: none;
         border-bottom: 4px solid plum;
     }

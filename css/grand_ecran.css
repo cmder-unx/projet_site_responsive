@@ -1,26 +1,3 @@
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1px;
-}
-
-h1{
-    margin: 0;
-    padding: 22px 0 22px 0;
-    font-size: xx-large;
-}
-
-h2{
-    margin: 0;
-    padding: 20px 0 20px 0;
-}
-
-p{
-    margin: 0;
-    padding: 0 0 16px 0;
-    text-align: justify;
-}
-
 @media only screen and (min-width: 1000px) {
 
     .partie-texte{
@@ -88,7 +65,7 @@ p{
 
     /* BOUTONS DE NAVIGATION */
     
-    button{
+    .btn-nav-epoques{
         background-color: unset;
         border: none;
         border-bottom: 2px solid black;
@@ -101,7 +78,7 @@ p{
         flex-flow: row wrap;
     }
 
-    button:hover{
+    .btn-nav-epoques:hover{
         border: none;
         border-bottom: 4px solid plum;
     }

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'histoire du papier toilette !</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/generale.css">
+    <link rel="stylesheet" href="css/grand_ecran.css">
+    <link rel="stylesheet" href="css/petit_ecran.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
         <div id="page-wrapper" class="page-wrapper">
-            <header id="header">
+            <header id="header" class="hide-section">
                 <div id="header-partie-image" class="image">
                 </div>
                 <div id="header-partie-texte">
@@ -24,7 +26,15 @@
                     </p>
                 </div>
             </header>
-            <section id="histoire">
+            <div id="navigation">
+                <div id="nav-section-precedente" class="nav-section">
+                    <button id="btn-nav-section-precedente" class="nav-section-btn hide-section"><i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+                <div id="nav-section-suivante" class="nav-section">
+                    <button id="btn-nav-section-suivante" class="nav-section-btn hide-section"><i class="fa-solid fa-arrow-down"></i></button>
+                </div>
+            </div>
+            <section id="histoire" class="hide-section">
                 <div id="histoire-intro">
                     <div id="histoire-intro-partie-texte" class="partie-texte">
                         <h2>Quelques dates importantes sur notre ami</h2>
@@ -50,7 +60,9 @@
                             où étaient utilisés de préférence de larges feuilles ou des copeaux de bois.
                         </p>
                         <div id="btn-epoques-navigations">
-                            <button id="btn-histoire-antiquite">Dans l'Antiquité</button><button id="btn-histoire-moyen-age">Au Moyen-Âge</button><button id="btn-histoire-a-nos-jours">Du XIX-XXe siècle à nos jours</button>
+                            <button id="btn-histoire-antiquite" class="btn-nav-epoques">Dans l'Antiquité</button>
+                            <button id="btn-histoire-moyen-age" class="btn-nav-epoques">Au Moyen-Âge</button>
+                            <button id="btn-histoire-a-nos-jours" class="btn-nav-epoques">Du XIX-XXe siècle à nos jours</button>
                         </div>
                     </div>
                     <img src="images/washi-papier-japonais.jpg" id="histoire-intro-image" class="image" alt="Washi">
@@ -139,7 +151,7 @@
                     </div>
                 </div>
             </section>
-            <section id="ecologie">
+            <section id="ecologie" class="hide-section">
                 <div id="ecologie-au-bout-du-rouleau">
                     <div id="ecologie-au-bout-du-rouleau-partie-texte" class="partie-texte">
                         <h2>L'écologie au bout du rouleau</h2>
