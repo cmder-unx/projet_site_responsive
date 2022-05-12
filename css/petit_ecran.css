@@ -44,6 +44,10 @@
         color: whitesmoke;
     }
 
+    #header-partie-texte h1{
+        text-align: center;
+    }
+
     #header-intro{
         width: 75%;
         font-size: large;
@@ -58,7 +62,7 @@
         align-items: center;
     }
 
-    /* BOUTONS DE NAVIGATION */
+    /* BOUTONS DE NAVIGATION ENTRE LES ÉPOQUES */
     
     .btn-nav-epoques{
         background-color: unset;
@@ -80,10 +84,6 @@
 
     .active-button{
         border-bottom: 4px solid plum;
-    }
-
-    #btn-histoire-antiquite,#btn-histoire-moyen-age,#btn-histoire-a-nos-jours{
-        flex: 1 1 auto;
     }
 
     /*

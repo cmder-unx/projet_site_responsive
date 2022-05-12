@@ -85,10 +85,6 @@
         border-bottom: 4px solid plum;
     }
 
-    #btn-histoire-antiquite,#btn-histoire-moyen-age,#btn-histoire-a-nos-jours{
-        flex: 1 1 auto;
-    }
-
     /*
         SECTION ECOLOGIE
     */
