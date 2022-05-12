@@ -11,7 +11,6 @@ let btn_nav_section_suivante = document.getElementById('btn-nav-section-suivante
 let header_section = document.getElementById('header');
 let histoire_section = document.getElementById('histoire');
 let ecologie_section = document.getElementById('ecologie');
-let quotes_section = document.getElementById('quotes');
 let equipe_section = document.getElementById('equipe');
 
 let page_wrapper = document.getElementById('page-wrapper');
@@ -51,13 +50,6 @@ btn_nav_section_suivante.addEventListener('click', function() {
         ecologie_section.classList.remove('reveal-section');
         ecologie_section.classList.add('hide-section');
 
-        quotes_section.classList.remove('hide-section');
-        quotes_section.classList.add('reveal-section');
-    
-    }else if(quotes_section.classList.contains('reveal-section')){
-        quotes_section.classList.remove('reveal-section');
-        quotes_section.classList.add('hide-section');
-
         equipe_section.classList.remove('hide-section');
         equipe_section.classList.add('reveal-section');
 
@@ -86,21 +78,15 @@ btn_nav_section_precedente.addEventListener('click', function() {
 
         btn_nav_section_suivante.classList.remove('hide-section');
         btn_nav_section_suivante.classList.add('reveal-button');
-    }else if(quotes_section.classList.contains('reveal-section')){
-        quotes_section.classList.remove('reveal-section');
-        quotes_section.classList.add('hide-section');
-        
-        ecologie_section.classList.remove('hide-section');
-        ecologie_section.classList.add('reveal-section');
+
     }else if(equipe_section.classList.contains('reveal-section')){
         equipe_section.classList.remove('reveal-section');
         equipe_section.classList.add('hide-section');
 
-        quotes_section.classList.remove('hide-section');
-        quotes_section.classList.add('reveal-section');
+        ecologie_section.classList.remove('hide-section');
+        ecologie_section.classList.add('reveal-section');
 
         btn_nav_section_suivante.classList.remove('hide-section');
         btn_nav_section_suivante.classList.add('reveal-button');
-
     }
 });
